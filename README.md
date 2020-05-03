@@ -1,0 +1,2 @@
+# nukebot
+BD Discord Bot
