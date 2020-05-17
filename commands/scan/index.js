@@ -1,28 +1,28 @@
 module.exports = {
-  name: "scan",
-  description: "Calculates upper and lower bound of scan",
-  execute(msg, tokens) {
+	name: "scan",
+	description: "Calculates upper and lower bound of scan",
+	execute(msg, tokens) {
 
-    var type = tokens[0];
-    var scanUnits = parseInt(tokens[1]);
+	var type = tokens[0];
+	var scanUnits = parseInt(tokens[1]);
 
-    if (isNaN(scanUnits)) {
-            msg.channel.send(`Please input a positive integer retard.`);
-            return;
-        }
+	if (isNaN(scanUnits)) {
+		msg.channel.send(`Please input a positive integer retard.`);
+		return;
+	}
 
-    if (type != "normal" && type != "advanced" && type != "incoming") {
+    if (type != "norm" && type != "adv" && type != "inc") {
       msg.channel.send(`Do you just pretend you're stupid or are you actually stupid?`);
     return;
     }
     var minUnits;
     var maxUnits;
-    if (type == "normal" || type == "incoming") {
+    if (type == "norm" || type == "inc") {
         minUnits = scanUnits * 0.66;
         maxUnits = scanUnits * 2;
 
     }
-    else if (type == "advanced") {
+    else if (type == "adv") {
         minUnits = scanUnits * 0.8;
         maxUnits = scanUnits * 1.33;
     }
