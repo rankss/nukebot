@@ -28,6 +28,7 @@
     <Folder Include="commands\distance\" />
     <Folder Include="commands\resource\" />
     <Folder Include="commands\shield\" />
+    <Folder Include="commands\scan\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="commands\distance\index.js">
@@ -40,6 +41,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="commands\shield\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+        <Compile Include="commands\scan\index.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
