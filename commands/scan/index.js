@@ -15,20 +15,22 @@ module.exports = {
       msg.channel.send(`Do you just pretend you're stupid or are you actually stupid?`);
     return;
     }
-
     var minUnits;
     var maxUnits;
     if (type == "normal" || type == "incoming") {
         minUnits = scanUnits * 0.66;
-        maxUnits = scanunits * 2;
+        maxUnits = scanUnits * 2;
+
     }
     else if (type == "advanced") {
         minUnits = scanUnits * 0.8;
-        maxUnits = scanunits * 1.33;
+        maxUnits = scanUnits * 1.33;
     }
-
+    console.log(minUnits);
     minUnits = Math.floor(minUnits);
     maxUnits = Math.ceil(maxUnits);
+    console.log(Math.floor(0.66));
+    console.log(maxUnits);
     msg.reply(`\nYour scan: ${scanUnits} units.\nMinimum: ${minUnits} units.\nMaximum: ${maxUnits} units.\nMay the odds be ever in your favour, commander.`);
   }
 };
