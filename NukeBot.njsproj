@@ -47,7 +47,10 @@
     <Compile Include="commands\scan\index.js">
       <SubType>Code</SubType>
     </Compile>
-        <Compile Include="commands\createchannel\index.js">
+    <Compile Include="commands\createchannel\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="commands\credits\index.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>

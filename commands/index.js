@@ -4,6 +4,7 @@
     Shield: require('./shield'),
     Resource: require('./resource'),
     Scan: require('./scan'),
-    CreateChannel: require('./createchannel')
+    CreateChannel: require('./createchannel'),
+    Credits: require('./credits')
     // Administrative Commands
 };
