@@ -29,6 +29,7 @@
     <Folder Include="commands\resource\" />
     <Folder Include="commands\shield\" />
     <Folder Include="commands\scan\" />
+    <Folder Include="commands\createchannel\" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="commands\distance\index.js">
@@ -43,7 +44,10 @@
     <Compile Include="commands\shield\index.js">
       <SubType>Code</SubType>
     </Compile>
-        <Compile Include="commands\scan\index.js">
+    <Compile Include="commands\scan\index.js">
+      <SubType>Code</SubType>
+    </Compile>
+        <Compile Include="commands\createchannel\index.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
