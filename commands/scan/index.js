@@ -26,11 +26,10 @@ module.exports = {
         minUnits = scanUnits * 0.8;
         maxUnits = scanUnits * 1.33;
     }
-    console.log(minUnits);
+
     minUnits = Math.floor(minUnits);
     maxUnits = Math.ceil(maxUnits);
-    console.log(Math.floor(0.66));
-    console.log(maxUnits);
+
     msg.reply(`\nYour scan: ${scanUnits} units.\nMinimum: ${minUnits} units.\nMaximum: ${maxUnits} units.\nMay the odds be ever in your favour, commander.`);
   }
 };
