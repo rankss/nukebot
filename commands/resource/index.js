@@ -14,7 +14,17 @@
         for (var i = 0; i < 5; i++) {
             metalIncome = Math.floor(workers * metalPercentage[i]) + metalPercentage[i] * 100;
             oilIncome = Math.floor(workers * oilPercentage[i]) + oilPercentage[i] * 100;
-            message += `Level ${i + 1}: ${Math.round(metalIncome)} metal, ${Math.round(oilIncome)} oil. Metal Payoff: ${Math.ceil(metalCost[i] / metalIncome)} ticks, Oil Payoff: ${Math.ceil(oilCost[i] / oilIncome)} ticks.\n`;
+
+           // message += `Level ${i + 1}: ${Math.round(metalIncome)} metal, ${Math.round(oilIncome)} oil. Metal Payoff: ${Math.ceil(metalCost[i] / metalIncome)} ticks, Oil Payoff: ${Math.ceil(oilCost[i] / oilIncome)} ticks.\n`;
+           if (i == 0) { 
+               message += `Level ${i + 1}: ${Math.round(metalIncome)} metal, ${Math.round(oilIncome)} oil. Metal Payoff: ${Math.ceil(metalCost[i] / metalIncome)} ticks, Oil Payoff: ${Math.ceil(oilCost[i] / oilIncome)} ticks.\n`;
+           }
+
+           else {
+               metalIncrease = metalIncome - (Math.floor(workers * metalPercentage[i-1]) + metalPercentage[i-1] * 100);
+               oilIncrease = oilIncome - (Math.floor(workers * oilPercentage[i-1]) + oilPercentage[i-1] * 100);
+               message += `Level ${i + 1}: ${Math.round(metalIncome)} metal, ${Math.round(oilIncome)} oil. Metal Payoff: ${Math.ceil(metalCost[i] / metalIncrease)} ticks, Oil Payoff: ${Math.ceil(oilCost[i] / oilIncrease)} ticks.\n`;
+           }
         }
         msg.reply(message);
     },
