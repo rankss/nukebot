@@ -4,7 +4,14 @@
     execute(msg, tokens) {
 
         var workers = parseInt(tokens[0]);
-
+        if (isNaN(workers)) {
+            msg.reply("you absolute fucking nonce. Why don't ya piss off and come back when you know how to write a number?");
+            return;
+        }
+        if (workers < 0) {
+            msg.reply("stop being a wanker.")
+            return;
+        }
         const metalCost = [150, 500, 500, 2000, 5000];
         const oilCost = [0, 100, 500, 1000, 2500];
         const metalPercentage = [0.06, 0.08, 0.17, 0.18, 0.2];
