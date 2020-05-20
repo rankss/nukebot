@@ -8,7 +8,6 @@ module.exports = {
             "https://i.kym-cdn.com/entries/icons/original/000/027/328/character.jpg",
         ];
         const chosenmeme = [memes[Math.floor(Math.random() * memes.length)]];
-        console.log(chosenmeme);
         var mention = tokens[0];
         if (!mention) return;
 
@@ -18,7 +17,7 @@ module.exports = {
             if (mention.startsWith("!")) {
                 mention = mention.slice(1);
             }
-            console.log(mention);
+
             mention = "<@" + mention + ">";
             msg.channel.send(tokens[0], {
                 mention,
