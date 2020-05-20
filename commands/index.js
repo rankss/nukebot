@@ -5,7 +5,7 @@
     Resource: require('./resource'),
     Scan: require('./scan'),
     Credits: require('./credits'),
-    
+    Stab: require('./stab'),
     // Administrative Commands
     CreateChannel: require('./createchannel')
 };
