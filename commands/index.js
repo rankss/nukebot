@@ -4,6 +4,7 @@
     Shield: require('./shield'),
     Resource: require('./resource'),
     Scan: require('./scan'),
+    Adv: require('./adv'),
     Credits: require('./credits'),
     Stab: require('./stab'),
     // Administrative Commands

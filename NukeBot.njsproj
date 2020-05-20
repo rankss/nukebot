@@ -25,13 +25,19 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="commands\" />
+    <Folder Include="commands\credits\" />
     <Folder Include="commands\distance\" />
+    <Folder Include="commands\adv\" />
     <Folder Include="commands\resource\" />
     <Folder Include="commands\shield\" />
     <Folder Include="commands\scan\" />
     <Folder Include="commands\createchannel\" />
+    <Folder Include="commands\stab\" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="commands\adv\index.js">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="commands\distance\index.js">
       <SubType>Code</SubType>
     </Compile>
@@ -53,7 +59,7 @@
     <Compile Include="commands\credits\index.js">
       <SubType>Code</SubType>
     </Compile>
-        <Compile Include="commands\stab\index.js">
+    <Compile Include="commands\stab\index.js">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
