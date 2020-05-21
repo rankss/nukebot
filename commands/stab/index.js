@@ -9,7 +9,9 @@ module.exports = {
         ];
         const chosenmeme = [memes[Math.floor(Math.random() * memes.length)]];
         var mention = tokens[0];
-        if (!mention) return;
+        if (!mention) {
+            mention = "";
+        };
 
         if (mention.startsWith("<@") && mention.endsWith(">")) {
             mention = mention.slice(2, -1);
@@ -19,10 +21,10 @@ module.exports = {
             }
 
             mention = "<@" + mention + ">";
+        }
             msg.channel.send(tokens[0], {
                 mention,
                 files: chosenmeme,
             });
-        }
     },
 };
