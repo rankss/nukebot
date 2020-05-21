@@ -7,6 +7,7 @@
     Adv: require('./adv'),
     Credits: require('./credits'),
     Stab: require('./stab'),
+    ArmorShred: require('./armorshred'),
     // Administrative Commands
     CreateChannel: require('./createchannel')
 };
